@@ -1,0 +1,134 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: white;
+}
+
+.imagemlogo {
+    position: absolute;
+    top: 20px;
+    right: 180px;
+    transform: translate(50%, 0);
+}
+
+.ImagemRetangulo {
+    position: absolute;
+    top: 90px;
+    right: 180px;
+    transform: translate(50%, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+.login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+ 
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFAB2E;
+}
+
+.unforen {
+    color: #4D49FF;
+}
+
+.login {
+    color: #FFAB2E;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#4D49FF
+}
+ 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ 
+.input-group {
+    margin-bottom: 15px;
+    color: #4D49FF;
+    text-align: left;
+
+}
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+.checkbox-group {
+    margin-bottom: 10px;
+    display: flex;
+    color: #4D49FF;
+    
+}
+ 
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+ 
+label[for="remember-me"] {
+    cursor: pointer;
+}
+ 
+button[type="submit"] {
+    background-color: #4D49FF;
+    color: #FFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+button[type="submit"]:hover {
+    background-color: #5656ff;
+    transform: scale(1.1);
+}
+ 
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+ 
+.create-account {
+    margin-top: 20px;
+    color: #4D49FF;
+}
+ 
+.create-account p {
+    margin-bottom: 10px;
+}
+ 
+.create-account a {
+    text-decoration: none;
+    color: #FFAB2E;
+}

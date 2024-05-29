@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/TelaCadastroRelato.css">
+    <link rel="shortcut icon" href="./imagens/TelaAjudaPsicologa/logo.png" type="image/x-icon">
+
+    <title>UnFore</title>
+ 
+</head>
+<body>
+
+<div id="myMenu" class="menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+    <div class="menu-content">
+        <a href="TelaHome.html">Home</a>
+        <a href="TelaCadastroRelato.html">Registrar Relatos</a>
+        <a href="TelaConsultarRelato01.html">Voluntariar Doações</a>
+        <a href="TelaConsultarRelato02.html">Voluntariar Contribuição</a>
+        <a href="TelaConsultarRelato03.html">Voluntariar Apoio Emocional</a>
+        <a href="TelaHistorico.html">Histórico de Contribuições</a>
+        <a href="TelaPerfil.html">Perfil</a>
+    </div>
+</div>
+
+<div id="main">
+    <button class="openbtn" onclick="toggleMenu()">&#9776;</button>
+</div>
+
+<img src="./imagens/TelaAjudaPsicologa/logo.png" alt="UnFore" class="imagemlogo">
+
+<div class="container">
+    <br><br><br><br><br><br><br><br>
+    <h1>Cadastro de Relato</h1>
+    <p>Nos diga aqui o seu relato!</p>
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text " id="name" placeholder="Digite seu nome">
+
+        <label for="report">Relato:</label>
+        <textarea id="report" placeholder="Descreva o seu relato"></textarea>
+    
+    </form>
+
+    <button class="btn" onclick="confirmRelato()">CONFIRMAR RELATO</button>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<div class="modal" id="modal"></div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("myMenu").classList.toggle('active');
+        document.getElementById("overlay").classList.toggle('active');
+    }
+
+    function closeMenu() {
+        document.getElementById("myMenu").classList.remove('active');
+        document.getElementById("overlay").classList.remove('active');
+    }
+
+    function confirmRelato() {
+        alert('RELATO REGISTRADO!');
+        window.location.href = './TelaHome.html';
+    }
+</script>
+
+</body>
+</html>

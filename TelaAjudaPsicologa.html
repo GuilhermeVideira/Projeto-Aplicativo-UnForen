@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/TelaAjudaPsicologa.js"></script>
+    <link rel="stylesheet" href="./css/TelaAjudaPsicologa.css">
+
+    <link rel="shortcut icon" href="./imagens/TelaAjudaPsicologa/logo.png" type="image/x-icon">
+
+    <title> UnFore </title>
+ 
+</head>
+<body>
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <div class="menu-content">
+            <a href="TelaHome.html">Home</a>
+            <a href="TelaCadastroRelato.html">Registrar Relatos</a>
+            <a href="TelaConsultarRelato01.html">Voluntariar Doações</a>
+            <a href="TelaConsultarRelato02.html">Voluntariar Contribuição</a>
+            <a href="TelaConsultarRelato03.html">Voluntariar Apoio Emocional</a>
+            <a href="TelaHistorico.html">Histórico de Contribuições</a>
+            <a href="TelaPerfil.html">Perfil</a>
+        </div>
+    </div>
+    
+    <div id="main">
+        <button class="openbtn" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    
+<img src="./imagens/TelaAjudaPsicologa/logo.png" alt="UnFore" class="imagemlogo">
+
+<img src="./imagens/TelaAjudaPsicologa/Retangulo.png" class="ImagemRetangulo">
+
+<img src="./imagens/TelaAjudaPsicologa/SessaoSemFundo.png" width="160" height="130" class="ImagemSessao">
+
+<span class="texto01"> Sessão - 29/05/2024   </span>
+
+<span class="texto02"> Gabriella Santana  </span>
+
+<span class="texto03"> 15 anos  </span>
+
+<span class="texto04"> Chat -  </span>
+
+<span class="texto05"> Apoio </span>
+
+<span class="texto06"> Psicológico </span>
+
+
+<div class="chat-container">
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+<center>
+    <div class="form-container">
+    <button class="botaoRegistrar" onclick="window.location.href='/TelaHome.html'"> VOLTAR </button>
+    </div></center>
+    
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<div class="modal" id="modal"></div>
+
+</body>
+</html>

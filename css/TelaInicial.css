@@ -1,0 +1,45 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.btn {
+    background-color: #3b3bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
+    text-align: center; 
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #5656ff;
+    transform: scale(1.1);
+}
+
+.texto01 {
+    position: absolute;
+    top: 688px;
+    right: 171px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #000000;
+    font-size: 15px
+}

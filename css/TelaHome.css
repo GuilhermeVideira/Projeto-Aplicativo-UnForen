@@ -1,0 +1,503 @@
+body {
+    font-family: 'Garamond', serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: white;
+  
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+
+}
+
+.menu.active {
+    width: 250px;
+    font-family: Arial, sans-serif;
+
+}
+
+.menu a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 15px; 
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #4D49FF; 
+    font-family: Arial, sans-serif;
+
+}
+
+.menu a:hover {
+    background-color: #4D49FF; 
+    font-family: Arial, sans-serif;
+
+    padding-left: 30px; 
+}
+
+.menu .closebtn {
+    position: absolute;
+    top: 0;
+    font-family: Arial, sans-serif;
+
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #4D49FF;
+    padding: 10px 15px;
+    border: none;
+    position: absolute; 
+    top: 10px; 
+    font-family: Arial, sans-serif;
+
+    left: 25px; 
+}
+
+.openbtn:hover {
+    background-color: #4D49FF;
+    font-family: Arial, sans-serif;
+
+}
+
+.menu-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+.imagemlogo {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    transform: translate(50%, 0);
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    background-color: #FFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #dadadd86;
+    opacity: 0;
+    font-family: Arial, sans-serif;
+
+    z-index: -1;
+    transition: opacity 0.5s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    z-index: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    z-index: -1;
+    font-family: Arial, sans-serif;
+
+}
+
+.imagemlogo {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    transform: translate(50%, 0);
+    font-family: Arial, sans-serif;
+
+}
+
+.ImagemRetangulo {
+    position: absolute;
+    top: 90px;
+    right: 180px;
+    transform: translate(50%, 0);
+    font-family: Arial, sans-serif;
+
+}
+
+.titulo {
+    position: absolute;
+    top: 78px;
+    right: 297px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #4D49FF;
+    font-size: 25px
+    
+}
+
+.titulo2 {
+    position: absolute;
+    top: 78px;
+    right: 218px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #4D49FF;
+    font-size: 25px
+}
+
+.titulo3 {
+    position: absolute;
+    top: 118px;
+    right: 309px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #FFAB2E;
+    font-size: 20px
+}
+
+.titulo4 {
+    position: absolute;
+    top: 118px;
+    right: 244px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #FFAB2E;
+    font-size: 20px
+}
+
+.titulo5 {
+    position: absolute;
+    top: 118px;
+    right: 157px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #FFAB2E;
+    font-size: 20px
+}
+
+.titulo6 {
+    position: absolute;
+    top: 118px;
+    right: 73px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #FFAB2E;
+    font-size: 20px
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 100%; 
+    margin-right: 20px; 
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+  
+  .card {
+    --main-color: #FFFFFF;
+    --bg-color: #4D49FF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 250px; 
+    padding: 15px; 
+    background: var(--bg-color);
+    border-radius: 15px; 
+    margin-bottom: 15px; 
+  }
+  
+  .card__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card___wrapper-acounts {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .card___wrapper-acounts > div:nth-child(2) {
+    position: absolute;
+    left: 15px; 
+    z-index: -1;
+  }
+  
+  .card___wrapper-acounts > div:nth-child(3) {
+    position: absolute;
+    left: 30px; 
+    z-index: -2;
+  }
+  
+  .card__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px; 
+    color: #fff;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 100%; 
+    background: var(--main-color);
+  }
+  
+  .card__acounts {
+    width: 32px;
+    height: 32px; 
+  }
+  
+  .card__acounts svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__menu {
+    width: 30px; 
+    height: 30px; 
+    background: #000000;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .card__title {
+    margin-top: 30px; 
+    font-weight: 900;
+    font-size: 20px; 
+    color: var(--main-color);
+  }
+  
+  .card__subtitle {
+    margin-top: 10px; 
+    font-weight: 400;
+    font-size: 12px; 
+    color: var(--main-color);
+  }
+  
+  .card__indicator {
+    margin-top: 30px; 
+    font-weight: 500;
+    font-size: 12px; 
+    color: var(--main-color);
+  }
+  
+  .card__progress progress {
+    width: 100%;
+    height: 4px;
+    border-radius: 100px;
+  }
+  
+  .card__progress progress::-webkit-progress-bar {
+    background-color: #00000030;
+    border-radius: 100px;
+  }
+  
+  .card__progress progress::-webkit-progress-value {
+    background-color: var(--main-color);
+    border-radius: 100px;
+  }
+  
+  
+  
+  .button {
+    width: 90px; 
+    height: 32px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px; 
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 5px; 
+    transition-duration: .5s;
+  }
+  
+  .svgIcon {
+    height: 20px; 
+    transition-duration: 1.5s;
+  }
+  
+  .bell path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .button:hover {
+    background-color: rgb(143, 143, 143);
+    transition-duration: .5s;
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+  }
+  
+  .button:hover .svgIcon {
+    transform: rotate(250deg);
+    transition-duration: 1.5s;
+  }
+  
+  .card__volunteer-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; 
+  }
+  
+  .button {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .texto001 {
+    position: absolute;
+    top: 568px;
+    right: 297px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #4D49FF;
+    font-size: 25px
+}
+
+.texto002 {
+    position: absolute;
+    top: 568px;
+    right: 237px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #4D49FF;
+    font-size: 25px
+}
+
+.texto003 {
+    position: absolute;
+    top: 568px;
+    right: 180px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #4D49FF;
+    font-size: 25px
+}
+
+.botaoRegistrar{
+    width: 100%;
+    padding: 10px;
+    background-color: #4D49FF;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botaoRegistrar:hover{
+    background-color: #5656ff;
+    transform: scale(1.1);
+}
+
+.form-container{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+.form-container h1{
+    color: #4D49FF;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.form-container p{
+    color: #FFAB2E;
+    margin-bottom: 20px;
+}
+
+.form-container label{
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #4D49FF;
+}
+
+.texto01 {
+    position: absolute;
+    top: 758px;
+    right: 181px;
+    transform: translate(50%, 0);
+    font-family:  Roboto; 
+    color: #000000;
+    font-size: 15px
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/TelaConsultarRelato01.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="shortcut icon" href="./imagens/TelaPerfil/logo.png" type="image/x-icon">
+
+    <title> UnFore </title>
+</head>
+<body>
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <div class="menu-content">
+            <a href="TelaHome.html">Home</a>
+            <a href="TelaCadastroRelato.html">Registrar Relatos</a>
+            <a href="TelaConsultarRelato01.html">Voluntariar Doações</a>
+            <a href="TelaConsultarRelato02.html">Voluntariar Contribuição</a>
+            <a href="TelaConsultarRelato03.html">Voluntariar Apoio Emocional</a>
+            <a href="TelaHistorico.html">Histórico de Contribuições</a>
+            <a href="TelaPerfil.html">Perfil</a>
+        </div>
+    </div>
+    
+    <div id="main">
+        <button class="openbtn" onclick="toggleMenu()">&#9776;</button>
+    </div>
+
+    <img src="./imagens/TelaPerfil/logo.png" alt="UnFore" class="imagemlogo">
+
+    <div class="input-pesquisar">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-box-seam"></i>
+        <input class="input-search" type="text" placeholder="Pesquisar">
+    </div>
+
+    <h1 class="title-main">Consultar relatos:</h1>
+
+    <div class="card-container">
+
+        <div class="card-page">
+            <a href="./TelaAjudaAtuacao.html">  <div class="card-group">
+                <div class="card square">
+                    <p class="card-text">Mongaguá</p>
+                    <p class="card-text1">Prefeitura da Estância Balnéaria de Mongaguá</p>
+                </div>
+                <div class="card rectangle">
+                    <p class="card-text">Relato:</p>
+                    <p class="card-text1">Cozinheiro</p>
+                    <p class="card-text">Descrição:</p>
+                    <p class="card-text1">Ajuda no preparo de alimentos. </p>
+                </div>
+            </div></a>
+            <div class="card-group">
+                <div class="card square">
+                    <p class="card-text">Mongaguá</p>
+                    <p class="card-text1">Flórida Mirim, Rua do Ouro - 178</p>
+                </div>
+                <div class="card rectangle">
+                    <p class="card-text">Relato:</p>
+                    <p class="card-text1">Transporte </p>
+                    <p class="card-text">Descrição:</p>
+                    <p class="card-text1">Ajuda ao transporte.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-page">
+            <div class="card-group">
+                <div class="card square">
+                    <p class="card-text">Mongaguá</p>
+                    <p class="card-text1">USF Jardim Praia Grande</p>
+                </div>
+                <div class="card rectangle">
+                    <p class="card-text">Relato:</p>
+                    <p class="card-text1">Assistencia básica</p>
+                    <p class="card-text">Descrição:</p>
+                    <p class="card-text1"> Acolhimento de desabrigados. </p>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card square">
+                    <p class="card-text">Mongaguá</p>
+                    <p class="card-text1">Regina Maria, Av. Nossa S. de Fátima - 3290</p>
+                </div>
+                <div class="card rectangle">
+                    <p class="card-text">Relato:</p>
+                    <p class="card-text1"> Reconstrução</p>
+                    <p class="card-text">Descrição:</p>
+                    <p class="card-text1"> Ajuda imedita. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-page">
+            <div class="card-group">
+                <div class="card square">
+                    <p class="card-text">Mongaguá</p>
+                    <p class="card-text1">Centro, Av. Mario Covas</p>
+                </div>
+                <div class="card rectangle">
+                    <p class="card-text">Relato:</p>
+                    <p class="card-text1">Acolhimento</p>
+                    <p class="card-text">Descrição:</p>
+                    <p class="card-text1">Acolhimento no local. </p>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card square">
+                    <p class="card-text">Mongaguá</p>
+                    <p class="card-text1">Santuário Nossa Senhora Rosa Mistica</p>
+                </div>
+                <div class="card rectangle">
+                    <p class="card-text">Relato:</p>
+                    <p class="card-text1">Acompanhamento.</p>
+                    <p class="card-text">Descrição:</p>
+                    <p class="card-text1">Acompanhamento pessoal.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <button class="prev-btn">&lt;</button>
+        <span class="page-number">1</span>
+        <button class="next-btn">&gt;</button>
+    </div>
+
+    <center><br><br>
+        <div class="form-container">
+        <button class="botaoRegistrar" onclick="window.location.href='./TelaHome.html'"> VOLTAR </button>
+        </div></center>
+
+    <script src="./js/TelaConsultarRelato01.js"></script>
+
+<div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+<div class="modal" id="modal"></div>
+
+</body>
+</html>
